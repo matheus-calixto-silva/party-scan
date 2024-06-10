@@ -10,6 +10,17 @@
     "prepare": "husky install",
     "commit": "git-cz"
   },
+  "ntl": {
+    "runner": "yarn",
+    "descriptions": {
+      "dev": "Executa o ambiente de desenvolvimento com Vite",
+      "build": "Compila o código TypeScript e cria a build de produção com Vite",
+      "lint": "Executa o ESLint para verificar o código e garantir que não existam diretivas desnecessárias ou avisos",
+      "preview": "Inicia uma pré-visualização da build de produção",
+      "server": "Inicia um servidor JSON utilizando o db.json como fonte de dados",
+      "commit": "Inicia o processo de commit utilizando o Commitizen para gerar mensagens de commit padronizadas"
+    }
+  },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -42,6 +53,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "6",
     "lint-staged": "^15.2.5",
+    "ntl": "^5.1.0",
     "postcss": "^8.4.38",
     "prettier": "^3.3.1",
     "tailwindcss": "^3.4.4",
