@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:3000/guests';
+const baseUrl = import.meta.env.VITE_API_URL;
 
 const getAllGuests = async () => {
   const request = await axios.get(`${baseUrl}`);
