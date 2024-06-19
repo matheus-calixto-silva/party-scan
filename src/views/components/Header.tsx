@@ -28,6 +28,7 @@ const Header = () => {
   const [confirmationModalOpen, setConfirmationModalOpen] = useState(false);
   const [scannedResult, setScannedResult] = useState('');
   const { fetchGuests } = useGuests(); // Usar o contexto para obter a função fetchGuests
+  console.log(scannedResult);
 
   useEffect(() => {
     const htmlElement = document.documentElement;
